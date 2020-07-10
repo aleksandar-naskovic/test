@@ -1,0 +1,163 @@
+html {
+  font-family: 'Teko', sans-serif;
+}
+
+body{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  color: white;
+}
+
+.container{
+  width: 1060px;
+  margin: auto;
+} 
+
+input, textarea, button, select {
+  font-family: inherit; 
+}
+
+select {
+  font-size: 20px;
+}
+
+input[type=text], input[type=email]{
+  width: 200px;
+  padding: 0px 15px;
+  border-radius: 50px;
+  font-size: 25px;
+}
+
+input[type=checkbox] {
+  margin: 30px 0;
+  padding-right: 50px;
+  margin-right: 15px;
+}
+
+input[class="country_code"] {
+  width: 45px;
+  color: gray;
+  border-radius: 10px;
+}
+
+label {
+  padding-right: 20px;
+  font-size: 25px;
+}
+
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.choice-btn{
+  margin: 0 20px;
+  padding: 15px 32px;
+  text-align: center;
+  cursor: pointer;
+  background-color: transparent;  
+  border: 4px solid #020024;
+  border-radius: 35px;
+  font-size: 30px;
+  font-weight: 700;
+  width: auto;
+  color: white;
+}
+
+.choice-btn:hover{
+  background-color: #020024;
+}
+
+.choice-btn:focus {
+  outline-style: none; -moz-outline-style:none;
+}
+
+.choice-btn:active {
+  outline-style: none; -moz-outline-style:none;
+}
+
+fieldset {
+  border: none;
+}
+
+#form {
+  border: solid 2px #020024;
+  display: none;
+  border-radius: 15px;
+  padding: 70px;
+}
+
+#phone_number_field{
+  display:none;
+}
+
+#email_field{
+  display:none;
+}
+
+#submit_field{
+  display:none;
+}
+
+#button{
+  padding: 15px 32px;
+  text-align: center;
+  cursor: pointer;
+  background-color: transparent; 
+  color: black; 
+  border: 4px solid #020024;
+  border-radius: 35px;
+  font-size: 20px;
+  color: white;
+  width: auto;
+}
+
+#button:hover{
+  background-color: #020024;
+}
+
+/*  Redirect Page */
+
+#load {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.redirect{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.redirect h2{
+  font-size: 30px;
+}
+
+#error {
+  font-size: 25px;
+  color: red;
+}
